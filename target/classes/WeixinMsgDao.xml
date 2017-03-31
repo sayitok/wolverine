@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.henry.weixin.dao.WeixinMsgDao">
+
+    <insert id="insert" parameterType="WeixinMsgDO" flushCache="true">
+        INSERT INTO weixin_msg (gmtCreate,gmtModified,fromUserName,toUserName,msgType,createTime,msgId,rawText,queryStr)
+        VALUES (now(),now(),#{fromUserName},#{toUserName},#{msgType},#{createTime},#{msgId},#{rawText},#{queryStr})
+    </insert>
+
+</mapper>

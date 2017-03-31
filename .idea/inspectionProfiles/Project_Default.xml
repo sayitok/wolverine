@@ -31,8 +31,8 @@
     <inspection_tool class="AlibabaAbstractClassShouldStartWithAbstractNaming" enabled="true" level="CRITICAL" enabled_by_default="false">
       <scope name="AlibabaCodeAnalysis" level="CRITICAL" enabled="true" />
     </inspection_tool>
-    <inspection_tool class="AlibabaAbstractMethodOrInterfaceMethodMustUseJavadoc" enabled="true" level="CRITICAL" enabled_by_default="false">
-      <scope name="AlibabaCodeAnalysis" level="CRITICAL" enabled="true" />
+    <inspection_tool class="AlibabaAbstractMethodOrInterfaceMethodMustUseJavadoc" enabled="true" level="MAJOR" enabled_by_default="false">
+      <scope name="AlibabaCodeAnalysis" level="MAJOR" enabled="true" />
     </inspection_tool>
     <inspection_tool class="AlibabaAvoidApacheBeanUtilsCopy" enabled="true" level="BLOCKER" enabled_by_default="false">
       <scope name="AlibabaCodeAnalysis" level="BLOCKER" enabled="true" />
