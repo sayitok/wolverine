@@ -2,163 +2,13 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
+      <artifact name="wolverine:war" />
       <artifact name="wolverine:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0c1897f-c56f-4450-a550-607bbf4f5f15" name="Default" comment="新增消息处理">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/common/annotation/ReqDesc.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/common/constant/SysConfig.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/common/enums/BizType.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/common/enums/HttpMethod.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/common/enums/XmlType.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/common/utils/AccessTokenUtil$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/common/utils/AccessTokenUtil.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/common/utils/CacheUtil.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/common/utils/HttpUtil.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/common/utils/RespUtil.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/common/utils/UrlParser.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/common/utils/XmlParser.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/controller/RobotController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/controller/WeixinMsgController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/dao/BaseDAO.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/dao/PfPackDao.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/dao/WeixinMsgDao.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/domain/QueryStrDO.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/domain/UrlDesc.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/domain/WxBaseDTO.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/domain/WxImageDTO.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/domain/WxLinkDTO.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/domain/WxRawDTO.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/domain/WxReqDTO.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/domain/WxTextDTO.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/domain/db/PfPackDO.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/domain/db/WeixinMsgDO.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/filter/LoggerFilter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/handler/DefaultMsgHandler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/handler/MsgHandler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/handler/MsgHandlerFactory.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/handler/PfPacketHandler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/handler/XmlMsgHandler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/robot/entity/DefaultRobot.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/robot/entity/IRobot.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/robot/enums/ErrorCode.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/robot/enums/MethodEnum.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/robot/model/Member.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/robot/model/RobotContext$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/robot/model/RobotContext$RobotContextWrapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/robot/model/RobotContext.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/robot/model/RobotResp.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/robot/utils/RobotRespUtil.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/wxapi/BaseApi$Pair.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/wxapi/BaseApi.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/wxapi/BaseService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/wxapi/cs/CustomerService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/wxapi/sys/SystemInfoService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/henry/weixin/wxapi/user/UserInfoService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/servlet-api.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/common/annotation/ReqDesc.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/common/constant/SysConfig.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/common/enums/BizType.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/common/enums/HttpMethod.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/common/enums/XmlType.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/common/utils/AccessTokenUtil$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/common/utils/AccessTokenUtil.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/common/utils/CacheUtil.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/common/utils/HttpUtil.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/common/utils/RespUtil.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/common/utils/UrlParser.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/common/utils/XmlParser.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/controller/RobotController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/controller/WeixinMsgController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/dao/BaseDAO.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/dao/PfPackDao.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/dao/WeixinMsgDao.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/domain/QueryStrDO.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/domain/UrlDesc.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/domain/WxBaseDTO.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/domain/WxImageDTO.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/domain/WxLinkDTO.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/domain/WxRawDTO.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/domain/WxReqDTO.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/domain/WxTextDTO.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/domain/db/PfPackDO.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/domain/db/WeixinMsgDO.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/filter/LoggerFilter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/handler/DefaultMsgHandler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/handler/MsgHandler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/handler/MsgHandlerFactory.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/handler/PfPacketHandler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/handler/XmlMsgHandler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/robot/entity/DefaultRobot.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/robot/entity/IRobot.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/robot/enums/ErrorCode.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/robot/enums/MethodEnum.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/robot/model/Member.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/robot/model/RobotContext$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/robot/model/RobotContext$RobotContextWrapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/robot/model/RobotContext.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/robot/model/RobotResp.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/robot/utils/RobotRespUtil.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/wxapi/BaseApi$Pair.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/wxapi/BaseApi.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/wxapi/BaseService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/wxapi/cs/CustomerService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/wxapi/sys/SystemInfoService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/com/henry/weixin/wxapi/user/UserInfoService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/servlet-api.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/lib/aopalliance-1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/lib/aspectjrt-1.8.8.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/lib/aspectjweaver-1.8.8.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/lib/commons-lang-2.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/lib/commons-lang3-3.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/lib/commons-logging-1.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/lib/dom4j-1.6.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/lib/fastjson-1.2.27.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/lib/guava-21.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/lib/logback-access-1.1.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/lib/logback-classic-1.1.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/lib/logback-core-1.1.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/lib/mybatis-3.4.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/lib/mybatis-spring-1.3.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/lib/mysql-connector-java-6.0.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/lib/slf4j-api-1.7.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/lib/spring-99.0-does-not-exist.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/lib/spring-aop-4.2.4.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/lib/spring-aspects-4.2.4.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/lib/spring-beans-4.2.4.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/lib/spring-context-4.2.4.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/lib/spring-context-support-4.2.4.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/lib/spring-core-4.2.4.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/lib/spring-expression-4.2.4.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/lib/spring-jdbc-4.2.4.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/lib/spring-orm-4.2.4.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/lib/spring-tx-4.2.4.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/lib/spring-web-4.2.4.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/lib/spring-webmvc-4.2.4.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/lib/xml-apis-1.0.b2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/PfPackDao.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/WeixinMsgDao.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/sys.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/applicationContext.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/PfPackDao.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/WeixinMsgDao.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/mybatis-config.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/classes/sys.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/logback.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/mybatis.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/servlet.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/wolverine/index.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wolverine.iml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_task_4_2_4_RELEASE.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/wolverine_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/wolverine_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/smartfox_info.xml" afterPath="$PROJECT_DIR$/.idea/smartfox_info.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="b0c1897f-c56f-4450-a550-607bbf4f5f15" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/wolverine_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/wolverine_war.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wolverine.iws" />
@@ -197,7 +47,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RobotController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RobotController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/henry/weixin/controller/RobotController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-548">
@@ -205,6 +55,36 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-551">
+              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseApi.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/henry/weixin/wxapi/BaseApi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="142">
+              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.htm" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/target/wolverine/index.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -224,42 +104,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="194">
               <caret line="81" column="23" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WeixinMsgController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/henry/weixin/controller/WeixinMsgController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="33" column="94" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="94" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RobotContext.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/henry/weixin/robot/model/RobotContext.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#418#419#0" expanded="true" />
-                <element signature="e#463#464#0" expanded="true" />
-                <element signature="e#511#512#0" expanded="true" />
-                <element signature="e#571#572#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Member.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/henry/weixin/robot/model/Member.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="19" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -366,6 +210,13 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -466,251 +317,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wolverine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wolverine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wolverine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wolverine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wolverine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wolverine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weixin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wolverine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wolverine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weixin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="robot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wolverine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wolverine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weixin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="robot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wolverine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wolverine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weixin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="robot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enums" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wolverine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wolverine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weixin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="robot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wolverine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wolverine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weixin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
+              <option name="myItemId" value="target" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -726,12 +333,94 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.44827586" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/servlet-api.jar!/" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Unnamed">
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:80" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_wolverine" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="5155" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="JProfiler">
+        <option name="JVM" value="C:/Program Files/Java/jdk1.8.0_60" />
+        <option name="WINDOW" value="false" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JProfiler">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -1139,6 +828,102 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
+    <configuration default="false" name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.26.463" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:80" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="wolverine:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_wolverine_2" />
+        <option name="HTTP_PORT" value="80" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="5155" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="JProfiler">
+        <option name="JVM" value="C:/Program Files/Java/jdk1.8.0_60" />
+        <option name="WINDOW" value="false" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JProfiler">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="wolverine:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
+    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -1150,7 +935,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1490967561676</updated>
-      <workItem from="1490967568403" duration="3428000" />
+      <workItem from="1490967568403" duration="5267000" />
     </task>
     <task id="LOCAL-00001" summary="新增消息处理">
       <created>1490971710338</created>
@@ -1159,11 +944,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490971710338</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="新增消息处理">
+      <created>1490971884850</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1490971884850</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3428000" />
+    <option name="totallyTimeSpent" value="5267000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1176,8 +968,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5531915" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1190,7 +983,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5008183" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1228,14 +1021,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-437">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -1400,6 +1185,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-551">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/henry/weixin/wxapi/BaseApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/wolverine/index.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
@@ -1410,7 +1219,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.17931035" />
                 <option value="0.5" />
               </list>
             </option>
