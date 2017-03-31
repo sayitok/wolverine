@@ -14,16 +14,16 @@ public class DefaultRobot implements IRobot {
 
     @Override
     public RobotResp initMembers(String memberList, Map<String, Object> paras) {
-        return RobotRespUtil.createSuccessResp();
+        return RobotRespUtil.createSuccessResp("success");
     }
 
     @Override
     public RobotResp handleMsg(String content, Map<String, Object> paras) {
-        return RobotRespUtil.createSuccessResp();
+        return RobotRespUtil.createSuccessResp("success");
     }
 
     @Override
     public RobotResp exit(Map<String, Object> paras) {
-        return RobotRespUtil.createSuccessResp();
+        return RobotRespUtil.createSuccessResp("success");
     }
 }

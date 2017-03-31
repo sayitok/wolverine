@@ -15,8 +15,8 @@ public class RobotRespUtil {
         return new RobotResp(code,msg,content);
     }
 
-    public static RobotResp createSuccessResp() {
-        return createErrorResp(ErrorCode.SUCCESS,null,null);
+    public static RobotResp createSuccessResp(String content) {
+        return createErrorResp(ErrorCode.SUCCESS,null,content);
     }
 
     public static RobotResp createErrorResp(ErrorCode errorCode,String msg, String content) {
