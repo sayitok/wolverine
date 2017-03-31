@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.springframework:spring:99.0-does-not-exist">
+    <CLASSES>
+      <root url="jar://$M2_REPO$/org/springframework/spring/99.0-does-not-exist/spring-99.0-does-not-exist.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$M2_REPO$/org/springframework/spring/99.0-does-not-exist/spring-99.0-does-not-exist-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$M2_REPO$/org/springframework/spring/99.0-does-not-exist/spring-99.0-does-not-exist-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
