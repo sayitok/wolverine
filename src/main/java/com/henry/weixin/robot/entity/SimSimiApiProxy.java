@@ -64,6 +64,9 @@ public class SimSimiApiProxy implements IRobotApiProxy{
             return RobotRespUtil.createSuccessResp("小黄鸡生病了，咳咳");
         }
         if(retCode==100) {
+            if(StringUtils.isBlank(resp)) {
+                resp = "我是一只小鸭几呀，一丫一丫哟";
+            }
             return RobotRespUtil.createSuccessResp(resp);
         }
         if(retCode==509) {
