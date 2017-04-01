@@ -101,8 +101,8 @@
       <file leaf-file-name="SimSimiApiProxy.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/henry/weixin/robot/entity/SimSimiApiProxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+            <state relative-caret-position="135">
+              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1403#1404#0" expanded="true" />
@@ -1272,7 +1272,7 @@
       <option name="presentableId" value="Default" />
       <updated>1490967561676</updated>
       <workItem from="1490967568403" duration="8790000" />
-      <workItem from="1491011712874" duration="16951000" />
+      <workItem from="1491011712874" duration="17124000" />
     </task>
     <task id="LOCAL-00001" summary="新增消息处理">
       <created>1490971710338</created>
@@ -1292,7 +1292,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25741000" />
+    <option name="totallyTimeSpent" value="25914000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1728,8 +1728,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/henry/weixin/robot/entity/SimSimiApiProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        <state relative-caret-position="135">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1403#1404#0" expanded="true" />
