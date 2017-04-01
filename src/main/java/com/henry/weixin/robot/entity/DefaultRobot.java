@@ -32,7 +32,7 @@ public class DefaultRobot implements IRobot,ApplicationContextAware,Initializing
 
     @Override
     public RobotResp handleMsg(WeixinMsg weixinMsg) {
-        if(fromQun(weixinMsg)) {
+        if(!filter(weixinMsg)) {
             return RobotRespUtil.createResp(ErrorCode.SILENTCE.getCode(),null,null);
         }
         RobotApiProxyEnum proxyEnum = RobotConfig.getRobotApiProxyIndex(weixinMsg.getFromUserName(),weixinMsg.getToUserName());
@@ -43,7 +43,11 @@ public class DefaultRobot implements IRobot,ApplicationContextAware,Initializing
         return RobotRespUtil.createSuccessResp("success");
     }
 
-    private boolean fromQun(WeixinMsg weixinMsg) {
+    private boolean filter(WeixinMsg weixinMsg) {
+        return !fromGroup(weixinMsg) || RobotConfig.whiteGroup(weixinMsg.getFromUserName());
+    }
+
+    private boolean fromGroup(WeixinMsg weixinMsg) {
         if(weixinMsg==null) {
             return false;
         }

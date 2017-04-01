@@ -1,7 +1,9 @@
 package com.henry.weixin.robot;
 
+import java.util.List;
 import java.util.Map;
 
+import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.henry.weixin.robot.enums.RobotApiProxyEnum;
 import org.apache.commons.lang3.StringUtils;
@@ -13,13 +15,27 @@ public class RobotConfig {
 
     private RobotConfig() {}
 
+    public static String GROUP_BFBZ = "@@7d2740f761819832148d821b827e3d463a620c70f4852f8d24667ca1f67a45a5";
+
+    public static String OWNER_ID = "@25904efb7ec3c3df0cbb51b4d950419a";
 
     /**
      * 0-Ð¡¶¹,1-Ð¡»Æ¼¦
      */
     public static RobotApiProxyEnum dutyRobot = RobotApiProxyEnum.SIMSIMI;
 
+    public static List<String> WHITE_GROUPS = Lists.newArrayList();
+
     private static Map<String,RobotApiProxyEnum> userDutyRobotMapper = Maps.newHashMap();
+
+
+    static {
+        WHITE_GROUPS.add(GROUP_BFBZ);
+    }
+
+    public static boolean whiteGroup(String userId) {
+        return userId!=null&&WHITE_GROUPS.contains(userId);
+    }
 
     /**
      *
