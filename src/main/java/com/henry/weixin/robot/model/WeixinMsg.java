@@ -19,9 +19,9 @@ public class WeixinMsg implements Serializable {
 
     private String msgId;
 
-    private String fromUserName;
+    private String fromUserId;
 
-    private String toUserName;
+    private String toUserId;
 
     private int msgType;
 
@@ -33,11 +33,30 @@ public class WeixinMsg implements Serializable {
 
     private String rawData;
 
+    private String fromUserName;
+
+
+
     public WeixinMsg(String raw) {
         this.rawData = raw;
         parse(this.rawData);
     }
 
+    public String getFromUserId() {
+        return fromUserId;
+    }
+
+    public void setFromUserId(String fromUserId) {
+        this.fromUserId = fromUserId;
+    }
+
+    public String getToUserId() {
+        return toUserId;
+    }
+
+    public void setToUserId(String toUserId) {
+        this.toUserId = toUserId;
+    }
 
     public void parse(String rawData) {
         if(StringUtils.isBlank(rawData)) {
@@ -46,8 +65,8 @@ public class WeixinMsg implements Serializable {
         try {
             JSONObject jsonObject = JSONObject.parseObject(rawData);
             msgId = jsonObject.getString("MsgId");
-            fromUserName = jsonObject.getString("FromUserName");
-            toUserName = jsonObject.getString("ToUserName");
+            fromUserId = jsonObject.getString("FromUserName");
+            toUserId = jsonObject.getString("ToUserName");
             msgType = jsonObject.getIntValue("MsgType");
             content = jsonObject.getString("Content");
             createTime = jsonObject.getLongValue("CreateTime");
@@ -73,13 +92,6 @@ public class WeixinMsg implements Serializable {
         this.fromUserName = fromUserName;
     }
 
-    public String getToUserName() {
-        return toUserName;
-    }
-
-    public void setToUserName(String toUserName) {
-        this.toUserName = toUserName;
-    }
 
     public int getMsgType() {
         return msgType;

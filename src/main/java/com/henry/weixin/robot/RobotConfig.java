@@ -15,7 +15,7 @@ public class RobotConfig {
 
     private RobotConfig() {}
 
-    public static String GROUP_BFBZ = "@@7d2740f761819832148d821b827e3d463a620c70f4852f8d24667ca1f67a45a5";
+    public static String GROUP_BFBZ = "◊Û≈Û”“”—¥∫≈Øª®ø™";
 
     public static String OWNER_ID = "@25904efb7ec3c3df0cbb51b4d950419a";
 

@@ -58,10 +58,12 @@ public class RobotController {
             return;
         }
         RobotResp robotResp = null;
+        WeixinMsg weixinMsg = new WeixinMsg(request.getParameter("para"));
+        weixinMsg.setFromUserName(request.getParameter("name"));
         if(MethodEnum.MEMBER.equals(methodEnum)) {
-            robotResp = defaultRobot.initMembers(new WeixinMsg(request.getParameter("para")));
+            robotResp = defaultRobot.initMembers(weixinMsg);
         } else if(MethodEnum.MSG.equals(methodEnum)) {
-            robotResp = defaultRobot.handleMsg(new WeixinMsg(request.getParameter("para")));
+            robotResp = defaultRobot.handleMsg(weixinMsg);
         } else {
             robotResp = RobotRespUtil.createErrorResp("m参数不正确");
         }

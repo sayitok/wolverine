@@ -35,7 +35,7 @@ public class DefaultRobot implements IRobot,ApplicationContextAware,Initializing
         if(!filter(weixinMsg)) {
             return RobotRespUtil.createResp(ErrorCode.SILENTCE.getCode(),null,null);
         }
-        RobotApiProxyEnum proxyEnum = RobotConfig.getRobotApiProxyIndex(weixinMsg.getFromUserName(),weixinMsg.getToUserName());
+        RobotApiProxyEnum proxyEnum = RobotConfig.getRobotApiProxyIndex(weixinMsg.getFromUserId(),weixinMsg.getToUserId());
         IRobotApiProxy apiProxy = robotApiProxyMap.get(proxyEnum);
         if(apiProxy!=null) {
             return apiProxy.execute(weixinMsg);
