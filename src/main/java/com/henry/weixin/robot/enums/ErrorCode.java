@@ -6,6 +6,7 @@ package com.henry.weixin.robot.enums;
 public enum ErrorCode {
 
     SUCCESS(100,"success"),
+    SILENTCE(101,"Å¶"),
     INTER_ERROR(502,"ÏµÍ³´íÎó");
 
     int code;

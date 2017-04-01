@@ -4,6 +4,7 @@ import java.util.Map;
 
 import com.google.common.collect.Maps;
 import com.henry.weixin.robot.RobotConfig;
+import com.henry.weixin.robot.enums.ErrorCode;
 import com.henry.weixin.robot.enums.RobotApiProxyEnum;
 import com.henry.weixin.robot.model.RobotResp;
 import com.henry.weixin.robot.model.WeixinMsg;
@@ -31,12 +32,22 @@ public class DefaultRobot implements IRobot,ApplicationContextAware,Initializing
 
     @Override
     public RobotResp handleMsg(WeixinMsg weixinMsg) {
-        RobotApiProxyEnum proxyEnum = RobotConfig.getRobotApiProxyIndex("","");
+        if(fromQun(weixinMsg)) {
+            return RobotRespUtil.createResp(ErrorCode.SILENTCE.getCode(),null,null);
+        }
+        RobotApiProxyEnum proxyEnum = RobotConfig.getRobotApiProxyIndex(weixinMsg.getFromUserName(),weixinMsg.getToUserName());
         IRobotApiProxy apiProxy = robotApiProxyMap.get(proxyEnum);
         if(apiProxy!=null) {
             return apiProxy.execute(weixinMsg);
         }
         return RobotRespUtil.createSuccessResp("success");
+    }
+
+    private boolean fromQun(WeixinMsg weixinMsg) {
+        if(weixinMsg==null) {
+            return false;
+        }
+        return weixinMsg.getFromUserName()!=null&&weixinMsg.getFromUserName().startsWith("@@");
     }
 
     @Override
