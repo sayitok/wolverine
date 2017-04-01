@@ -1,7 +1,6 @@
 package com.henry.weixin.robot.entity;
 
 import java.util.List;
-import java.util.Map;
 
 import javax.annotation.PostConstruct;
 
@@ -10,6 +9,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.google.common.collect.Lists;
 import com.henry.weixin.common.utils.HttpUtil;
 import com.henry.weixin.robot.model.RobotResp;
+import com.henry.weixin.robot.model.WeixinMsg;
 import com.henry.weixin.robot.utils.RobotRespUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -42,8 +42,8 @@ public class SimSimiApiProxy implements IRobotApiProxy{
     }
 
     @Override
-    public RobotResp execute(String content, Map<String, Object> paras) {
-        String url = getReqUrl(content,defaultLc);
+    public RobotResp execute(WeixinMsg weixinMsg) {
+        String url = getReqUrl(weixinMsg.getContent(),defaultLc);
         String result = HttpUtil.sendGet(url);
         if(StringUtils.isBlank(result)) {
             return RobotRespUtil.createSuccessResp("小黄鸡睡着啦，需要叫小豆出来陪你吗？");

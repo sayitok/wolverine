@@ -13,6 +13,7 @@ import com.henry.weixin.common.utils.RespUtil;
 import com.henry.weixin.robot.entity.DefaultRobot;
 import com.henry.weixin.robot.enums.MethodEnum;
 import com.henry.weixin.robot.model.RobotResp;
+import com.henry.weixin.robot.model.WeixinMsg;
 import com.henry.weixin.robot.utils.RobotRespUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -34,7 +35,13 @@ public class RobotController {
     @RequestMapping(method = RequestMethod.GET)
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException,
         IOException {
-        handleReq(request,response);
+        try {
+            handleReq(request,response);
+        } catch (Exception e) {
+            logger.error("处理请求发生异常",e);
+            RespUtil.output(response, "系统打瞌睡啦，自己玩去吧");
+        }
+
     }
 
     @RequestMapping(method = RequestMethod.POST)
@@ -52,9 +59,9 @@ public class RobotController {
         }
         RobotResp robotResp = null;
         if(MethodEnum.MEMBER.equals(methodEnum)) {
-            robotResp = defaultRobot.initMembers(request.getParameter("para"),buildParamMap(request.getParameterMap()));
+            robotResp = defaultRobot.initMembers(new WeixinMsg(request.getParameter("para")));
         } else if(MethodEnum.MSG.equals(methodEnum)) {
-            robotResp = defaultRobot.handleMsg(request.getParameter("para"),buildParamMap(request.getParameterMap()));
+            robotResp = defaultRobot.handleMsg(new WeixinMsg(request.getParameter("para")));
         } else {
             robotResp = RobotRespUtil.createErrorResp("m参数不正确");
         }

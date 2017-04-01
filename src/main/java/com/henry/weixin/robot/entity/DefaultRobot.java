@@ -6,6 +6,7 @@ import com.google.common.collect.Maps;
 import com.henry.weixin.robot.RobotConfig;
 import com.henry.weixin.robot.enums.RobotApiProxyEnum;
 import com.henry.weixin.robot.model.RobotResp;
+import com.henry.weixin.robot.model.WeixinMsg;
 import com.henry.weixin.robot.utils.RobotRespUtil;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.InitializingBean;
@@ -24,22 +25,22 @@ public class DefaultRobot implements IRobot,ApplicationContextAware,Initializing
     private Map<RobotApiProxyEnum,IRobotApiProxy> robotApiProxyMap;
 
     @Override
-    public RobotResp initMembers(String memberList, Map<String, Object> paras) {
+    public RobotResp initMembers(WeixinMsg weixinMsg) {
         return RobotRespUtil.createSuccessResp("success");
     }
 
     @Override
-    public RobotResp handleMsg(String content, Map<String, Object> paras) {
+    public RobotResp handleMsg(WeixinMsg weixinMsg) {
         RobotApiProxyEnum proxyEnum = RobotConfig.getRobotApiProxyIndex("","");
         IRobotApiProxy apiProxy = robotApiProxyMap.get(proxyEnum);
         if(apiProxy!=null) {
-            return apiProxy.execute(content,paras);
+            return apiProxy.execute(weixinMsg);
         }
         return RobotRespUtil.createSuccessResp("success");
     }
 
     @Override
-    public RobotResp exit(Map<String, Object> paras) {
+    public RobotResp exit(WeixinMsg weixinMsg) {
         return RobotRespUtil.createSuccessResp("success");
     }
 
