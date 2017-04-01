@@ -70,6 +70,9 @@ public class SimSimiApiProxy implements IRobotApiProxy{
             nextIndex();
             return RobotRespUtil.createSuccessResp("小黄鸡出差去了，客官需要小豆陪吗");
         }
+        if(retCode==404) {
+            return RobotRespUtil.createSuccessResp("你缩什么，听不清~~~");
+        }
         return RobotRespUtil.createSuccessResp("系统发生故障，快联系主人处理一下,咔咔:"+result);
     }
 
