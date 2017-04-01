@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.google.common.collect.Maps;
 import com.henry.weixin.common.utils.RespUtil;
 import com.henry.weixin.robot.entity.DefaultRobot;
+import com.henry.weixin.robot.entity.SimSimiApiProxy;
 import com.henry.weixin.robot.enums.MethodEnum;
 import com.henry.weixin.robot.model.RobotResp;
 import com.henry.weixin.robot.model.WeixinMsg;
@@ -31,6 +32,8 @@ public class RobotController {
 
     @Resource
     private DefaultRobot defaultRobot;
+    @Resource
+    private SimSimiApiProxy simSimiApiProxy;
 
     @RequestMapping(method = RequestMethod.GET)
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException,
@@ -54,7 +57,7 @@ public class RobotController {
         response.setCharacterEncoding("UTF-8");
         MethodEnum methodEnum = MethodEnum.getMethod(request.getParameter("m"));
         if(methodEnum==null) {
-            RespUtil.output(response, RobotRespUtil.createErrorResp("参数不正确").toString());
+            RespUtil.output(response, simSimiApiProxy.run(request.getParameter("content")).toString(),"GBK");
             return;
         }
         RobotResp robotResp = null;

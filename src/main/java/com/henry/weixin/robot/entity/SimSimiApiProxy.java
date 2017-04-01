@@ -1,5 +1,6 @@
 package com.henry.weixin.robot.entity;
 
+import java.net.URLEncoder;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
@@ -30,7 +31,9 @@ public class SimSimiApiProxy implements IRobotApiProxy{
 
     private static final float defaultLc = 0.8f;
 
-    private String host = "http://sandbox.api.simsimi.com/request.p?key=%s&lc=ch&ft=%.1f&text=%s";
+    private String host = "http://sandbox.api.simsimi.com/request.p?";
+
+    private String queryStr = "key=%s&lc=ch&ft=%.1f&text=%s";
 
     @PostConstruct
     private void init() {
@@ -43,8 +46,12 @@ public class SimSimiApiProxy implements IRobotApiProxy{
 
     @Override
     public RobotResp execute(WeixinMsg weixinMsg) {
-        String url = getReqUrl(weixinMsg.getContent(),defaultLc);
-        String result = HttpUtil.sendGet(url);
+        return run(weixinMsg.getContent());
+    }
+
+    public RobotResp run(String content) {
+        String url = getReqUrl(content,defaultLc);
+        String result = HttpUtil.sendGet(url,"utf-8");
         if(StringUtils.isBlank(result)) {
             return RobotRespUtil.createSuccessResp("小黄鸡睡着啦，需要叫小豆出来陪你吗？");
         }
@@ -67,7 +74,12 @@ public class SimSimiApiProxy implements IRobotApiProxy{
     }
 
     private String getReqUrl(String content,float lc) {
-        return String.format(host,trialKeyList.get(currentIndex),lc,content);
+        try {
+            return host+ String.format(queryStr,trialKeyList.get(currentIndex),lc,URLEncoder.encode(content,"utf-8"));
+        } catch (Exception e) {
+            return host+ String.format(queryStr,trialKeyList.get(currentIndex),lc,content);
+        }
+
     }
 
     private int nextIndex() {

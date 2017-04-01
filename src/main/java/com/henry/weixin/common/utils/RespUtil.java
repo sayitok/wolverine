@@ -13,7 +13,6 @@ import com.henry.weixin.common.constant.SysConfig;
 import com.henry.weixin.common.enums.XmlType;
 import com.henry.weixin.domain.WxBaseDTO;
 import com.henry.weixin.domain.WxImageDTO;
-import com.henry.weixin.domain.WxLinkDTO;
 import com.henry.weixin.domain.WxTextDTO;
 import org.apache.commons.lang3.StringUtils;
 import org.dom4j.Document;
@@ -87,6 +86,24 @@ public class RespUtil {
         try {
             OutputStream os = response.getOutputStream();
             os.write(result.getBytes("UTF-8"));
+            os.flush();
+            os.close();
+        } catch (Exception e) {
+            logger.error("exception happens!",e);
+        }
+    }
+
+    public static void output(HttpServletResponse response, String result,String charset) {
+        if(result==null) {
+            result = "empty";
+        }
+        if(StringUtils.isBlank(charset)) {
+            charset = "UTF-8";
+        }
+        logger.warn("output={}",result);
+        try {
+            OutputStream os = response.getOutputStream();
+            os.write(result.getBytes(charset));
             os.flush();
             os.close();
         } catch (Exception e) {

@@ -44,7 +44,10 @@ public class DefaultRobot implements IRobot,ApplicationContextAware,Initializing
     }
 
     private boolean filter(WeixinMsg weixinMsg) {
-        return !fromGroup(weixinMsg) || RobotConfig.whiteGroup(weixinMsg.getFromUserName());
+        if(RobotConfig.whiteGroup(weixinMsg.getFromUserName())) {
+            return true;
+        }
+        return !fromGroup(weixinMsg);
     }
 
     private boolean fromGroup(WeixinMsg weixinMsg) {
